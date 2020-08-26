@@ -1,0 +1,30 @@
+{
+  "name": "nodefull",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently -r dotenv/config \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

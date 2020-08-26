@@ -1,0 +1,42 @@
+$button-color: blue;
+
+.job {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+
+    .card-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 15px 0 15px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        .location{
+            font-size: small;
+        }
+
+        .job-title {
+            margin-top: 5px;
+            font-size: large;
+        }
+
+        .description-btn{
+            padding: 10px 0px;
+            font-size: small;
+        }
+
+        .date-logo{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}

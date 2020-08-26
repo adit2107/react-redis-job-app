@@ -1,0 +1,7 @@
+FROM node:alpine AS job-tasks
+WORKDIR /home/jobs
+COPY server/helper/ ./helper
+COPY server/worker/ ./worker
+RUN npm init -y && npm install cron -y && npm install redis -y && npm install axios -y
+
+CMD ["node", "worker/index.js"]

@@ -50,7 +50,7 @@ const Job = ({job}) => {
             <Card className='card' elevation={3}>
             <CardContent className='card-content'>
                 <div>
-                <Typography variant='h4'>{job.title}</Typography>
+                <Typography variant='h6'>{job.title}</Typography>
                 <Divider/>
                 
 
